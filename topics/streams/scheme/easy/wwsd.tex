@@ -12,9 +12,19 @@
 \lstinline$3$
 \end{solution}
 
-\part \lstinline$scm> (delay (+ x 1))$
+\part \lstinline$scm> (define p (delay (+ x 1)))$
+\begin{solution}[.25in]
+\lstinline$p$
+\end{solution}
+
+\part \lstinline$scm> p$
 \begin{solution}[.25in]
 \lstinline$#[promise]$
+\end{solution}
+
+\part \lstinline$scm> (force p)$
+\begin{solution}[.25in]
+\lstinline$2$
 \end{solution}
 
 \part \lstinline$scm> (define (foo x) (+ x 10))$
