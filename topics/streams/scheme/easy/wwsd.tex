@@ -7,11 +7,6 @@
 \lstinline$x$
 \end{solution}
 
-\part \lstinline$scm> (if 2 3 4)$
-\begin{solution}[0.25in]
-\lstinline$3$
-\end{solution}
-
 \part \lstinline$scm> (define p (delay (+ x 1)))$
 \begin{solution}[.25in]
 \lstinline$p$
@@ -19,7 +14,7 @@
 
 \part \lstinline$scm> p$
 \begin{solution}[.25in]
-\lstinline$#[promise]$
+\lstinline$#[promise (unforced)]$
 \end{solution}
 
 \part \lstinline$scm> (force p)$
@@ -32,7 +27,11 @@
 \lstinline$foo$
 \end{solution}
 
-\part \lstinline$scm> (define bar (cons-stream (foo 1) (cons-stream (foo 2) bar)))$
+\part 
+\begin{lstlisting}
+scm> (define bar (cons-stream (foo 1) 
+                              (cons-stream (foo 2) bar)))
+\end{lstlisting}
 \begin{solution}[0.25in]
 \lstinline$bar$
 \end{solution}
@@ -44,7 +43,7 @@
 
 \part \lstinline$scm> (cdr bar)$
 \begin{solution}[0.25in]
-\lstinline$#[promise]$
+\lstinline$#[promise (unforced)]$
 \end{solution}
 
 \part \lstinline$scm> (define (foo x) (+ x 1))$
@@ -54,7 +53,7 @@
 
 \part \lstinline$scm> (cdr-stream bar)$
 \begin{solution}[0.25in]
-\lstinline$(3 . #[promise])$
+\lstinline$(3 . #[promise (unforced)])$
 \end{solution}
 
 \part \lstinline$scm> (define (foo x) (+ x 5))$
@@ -69,6 +68,6 @@
 
 \part \lstinline$scm> (cdr-stream bar)$
 \begin{solution}[0.25in]
-\lstinline$(3 . #[promise])$
+\lstinline$(3 . #[promise (unforced)])$
 \end{solution}
 \end{parts}

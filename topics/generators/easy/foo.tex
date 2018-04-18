@@ -23,7 +23,7 @@ World
 \end{blocksection}
 
 \begin{blocksection}
-\question How can we modify \lstinline$foo$ so that \lstinline$list(foo()) == [1, 2, 3, . . . , 10]$? (It's okay if the program prints along the way.)
+\question How can we modify \lstinline$foo$ so that \lstinline$list(foo()) == [0, 1, 2, . . . , 9]$? (It's okay if the program prints along the way.)
 
 \begin{solution}[0.50in]
 Change the \lstinline$if$ to a \lstinline$while$ statement, and make sure to increment
@@ -33,8 +33,8 @@ Change the \lstinline$if$ to a \lstinline$while$ statement, and make sure to inc
 def foo():
     a = 0
     while a < 10:
-        a += 1
         yield a
+        a += 1
 \end{lstlisting}
 \end{solution}
 \end{blocksection}

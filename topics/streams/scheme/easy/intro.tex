@@ -1,18 +1,19 @@
 \begin{blocksection}
-\question What's the advantage of using a stream over a linked list?
+\question What are the differences between streams and scheme lists? What's the advantage of using a stream 
+over a linked list?
 \begin{solution}[1.0in]
-Lazy evaluation. We only evaluate up to what we need.
+Scheme lists have another list as their second element, streams have another stream as the second argument to
+their constructor.
+Streams also wrap their second element in a promise. This means that in order to calculate the second element,
+we have to force that promise. Therefore, streams are lazily evaluated, and we need to use cons-stream in order
+to access the second element (instead of just being able to use cons, which do not force a promise).
+Streams are good because of lazy evaluation. We only evaluate up to what we need at any given point, allowing
+us to change the environment or save space between calculating elements.
 \end{solution}
 
 \question What's the maximum size of a stream?
 \begin{solution}[1.0in]
 Infinity
-\end{solution}
-
-\question What's stored in first and rest? What are their types?
-\begin{solution}[1.0in]
-First is a value, rest is another stream (either a method to calculate it, or an already calculated stream). In the case
- of Scheme, this is called a promise.
 \end{solution}
 
 \question When is the next element actually calculated?
