@@ -1,11 +1,12 @@
 \documentclass{exam}
-\usepackage{../commonheader}
+\usepackage{../../commonheader}
+\usepackage{verbatim}
 \lstset{language=Scheme}
 
 %%% CHANGE THESE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\discnumber{10}
-\title{\textsc{Interpreters and Macros}}
-\date{July 30, 2018}
+\discnumber{5}
+\title{\textsc{Introduction to Scheme}}
+\date{July 31, 2019}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -13,30 +14,29 @@
 \rule{\textwidth}{0.15em}
 \fontsize{12}{15}\selectfont
 
-
-\section{Let in Scheme}
+%%% INCLUDE TOPICS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{questions}
-\subimport{../../topics/scheme/easy/}{let-issues.tex}
+\section{What Would Scheme Print?}
+\subimport{../../topics/scheme/easy/wwsd/}{basics.tex}
+
+\newpage
+\section{Scheme Lists}
+\subimport{../../topics/scheme/easy/wwsd/}{lists_nodots.tex}
 
 
 \newpage
-%%% Question %%%
+\section{Code Writing in Scheme}
+\subimport{../../topics/scheme/easy/}{sixty-ones.tex}
 
-\section{Interpreters}
-\subimport{../../topics/interpreters/easy/}{intro.tex}
-\subimport{../../topics/interpreters/medium/}{eval-apply.tex}
+
+\newpage
+\section{Special Forms}
+\subimport{../../topics/scheme/easy/wwsd/}{special-forms.tex}
+
+\newpage
+\section{More Code Writing}
+\subimport{../../topics/scheme/medium/}{apply-n.tex}
+
 \end{questions}
-
-\begin{questions}
-\section{Macros}
-\subimport{../../topics/macros/easy/}{macros-quasi.tex}
-\subimport{../../topics/macros/medium/}{if-macro.tex}
-\subimport{../../topics/macros/medium/}{apply-twice.tex}
-\end{questions}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}

@@ -11,8 +11,7 @@ class Musician:
     def perform(self):
         print("a rousing " + self.instrument + " performance")
         self.popularity = self.popularity + 2
-    def __repr__(self):
-        return self.instrument
+
 
 class BandLeader(Musician):
     def __init__(self):
@@ -24,13 +23,7 @@ class BandLeader(Musician):
             m.perform()
         Musician.popularity += 1
         print(song)
-    def __str__(self):
-        return "Here's the band!"
-    def __repr__(self):
-        band = ""
-        for m in self.band:
-            band += str(m) + " "
-        return band[:-1]
+
 
 miles = Musician("trumpet")
 goodman = Musician("clarinet")
@@ -91,20 +84,5 @@ caravan
 
 \vspace{2\baselineskip}
 
-\begin{lstlisting}
->>> print(ellington)
-\end{lstlisting}
-\begin{solution}[.2in]
-Here's the band!
-\end{solution}
-
-\vspace{2\baselineskip}
-
-\begin{lstlisting}
->>> ellington
-\end{lstlisting}
-\begin{solution}[.2in]
-clarinet trumpet
-\end{solution}
 
 \end{blocksection}

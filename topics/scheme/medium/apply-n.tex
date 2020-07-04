@@ -1,5 +1,5 @@
-\question Define \lstinline{apply-multiple} which takes in a single argument function \lstinline{f}, 
-a nonnegative integer \lstinline{n}, and a value \lstinline{x} and returns the result of applying 
+\question Define \lstinline{apply-multiple} which takes in a single argument function \lstinline{f},
+a nonnegative integer \lstinline{n}, and a value \lstinline{x} and returns the result of applying
 \lstinline{f} to \lstinline{x} a total of \lstinline{n} times.
 
 \begin{lstlisting}
@@ -12,7 +12,7 @@ scm> (apply-multiple (lambda (x) (* 1000 x)) 0 5)
 5
 
 
-(define apply-multiple (f n x)
+(define (apply-multiple f n x)
 
 
 
