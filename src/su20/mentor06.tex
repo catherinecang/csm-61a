@@ -1,12 +1,11 @@
 \documentclass{exam}
 \usepackage{../commonheader}
-\usepackage{verbatim}
-\lstset{language=Scheme}
+
 
 %%% CHANGE THESE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \discnumber{6}
-\title{\textsc{Scheme Lists}}
-\date{July 16th, 2018}
+\title{\textsc{Midterm Review}}
+\date{July 15 and 16, 2020}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -17,21 +16,34 @@
 %%% INCLUDE TOPICS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Question %%%
 
+\section{Trees}
 \begin{questions}
+\subimport{../../topics/trees/adt/medium/}{factor-tree.tex}
+\end{questions}
 
-\section{What Would Scheme Display}
-\subimport{../../topics/scheme/medium/}{lists-hard.tex}
 
-
-\section{Code Writing}
-
-\subimport{../../topics/scheme/medium/}{well-formed.tex}
-
-\subimport{../../topics/scheme/medium/}{is-prefix.tex}
-
-\subimport{../../topics/scheme/medium/}{waldo.tex}
+\section{Lists}
+\begin{questions}
+\subimport{../../topics/lists/mutable/medium/}{incredibles.tex}
 
 \end{questions}
+
+\section{Recursion}
+\begin{questions}
+\subimport{../../topics/recursion/medium/}{subsets.tex}
+\subimport{../../topics/recursion/medium/}{gibbonacci.tex}
+\end{questions}
+
+\section{Higher Order Functions}
+\begin{questions}
+\subimport{../../topics/hof/medium/}{make-digit-remover.tex}
+\end{questions}
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

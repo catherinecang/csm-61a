@@ -16,5 +16,13 @@
 
 \begin{solution}[1in]
 \url{https://goo.gl/EAmZBW}
+
+Explanation:
+1) Remember that pop is the mutation function that returns something. When appending a list,
+remember to make it a nested list.
+2) When copying a list, remember that it is a "shallow copy". This means we  want to copy
+whatever is in that box in the box and pointer diagram, so if there's a value there, we copy the value. However,
+if there is a nested list, we copy the arrow pointing to the list. We do not create a new list.
+3) All mutation functions except \textbf{pop} do not have returns.
 \end{solution}
 \end{blocksection}
