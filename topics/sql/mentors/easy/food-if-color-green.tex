@@ -1,21 +1,21 @@
 \begin{blocksection}
-\question Write a query that lists all the mentors along with their favorite food if their favorite color is green.
+\question Write a query that lists all the mentors along with their favorite food if their favorite color is black.
 
 \begin{lstlisting}
-Lindsay|Pie
-Keon|Ramen
+Richard|Broccoli
+Tarang|Burrito
 \end{lstlisting}
 
 \begin{solution}[1in]
 \begin{lstlisting}
 select name, food
   from mentors
-  where color = 'Green';
-  
+  where color = 'Black';
+
 -- With aliasing
 select m.name, m.food
   from mentors as m
-  where m.color = 'Green';
+  where m.color = 'Black';
 \end{lstlisting}
 \end{solution}
 \end{blocksection}

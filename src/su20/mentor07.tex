@@ -3,23 +3,29 @@
 \usepackage{tikz}
 
 \discnumber{7}
-\title{OOP}
-\date{July 19, 2017}
+\title{Generators and Nonlocal}
+\date{July 20 and 21, 2020}
 
 \begin{document}
 \maketitle
 
-\section{OOP}
+\section{Nonlocal}
+\subimport{../../topics/nonlocal/text/}{nonlocal-overview.txt}
 \begin{questions}
-\subimport{../../topics/oop/easy/wwpd/}{hoop.tex}
-\subimport{../../topics/oop/easy/}{team-baller.tex}
-\subimport{../../topics/oop/medium/}{pingpong.tex}
-\subimport{../../topics/oop/medium/}{flying-the-coop.tex}
-\clearpage
-\section{Mutable Trees}
-\subimport{../../topics/trees/class/text/}{implementation.tex}
-\subimport{../../topics/trees/class/easy/}{tree-sum.tex}
-\subimport{../../topics/trees/class/double-tree-needs-mutation/}{question.tex}
+\subimport{../../topics/nonlocal/easy/env-diagram/}{kale.tex}
+\subimport{../../topics/nonlocal/medium/}{pingpongv3.tex}
 \end{questions}
+
+\newpage
+
+\section{Generators}
+\subimport{../../topics/generators/text/}{generators-overview.txt}
+\begin{questions}
+\subimport{../../topics/generators/easy/}{foo.tex}
+\subimport{../../topics/generators/medium/}{filter-gen.tex}
+\subimport{../../topics/generators/medium/}{tree-sequence.tex}
+\end{questions}
+
+
 
 \end{document}

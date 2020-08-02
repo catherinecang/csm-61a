@@ -1,0 +1,34 @@
+Unlike Python, all Scheme lists are linked lists. Recall that a linked list is made up of Links that have a first and a rest, where the rest is another Link. Similarly, Scheme lists are made up of pairs with a first and a rest, where the rest is another pair.
+
+\textbf{Ways to make scheme lists:}
+\begin{itemize}
+\item Cons \\
+\textbf{Syntax:} \lstinline{(cons <car-elem> <cdr-elem>)} \\
+Takes in a pair of two elements; similar to how a Python linked list has 2 elements as well --- first and rest.
+\item List \\
+\textbf{Syntax:} \lstinline{(list <elem1> <elem2> ...)} \\
+Takes in an arbitrary number of elements/arguments, and constructs a list where each elem is the first of its own pair. Note how this differs from \lstinline{cons} where you specify a first and rest rather than just specifying the first of each pair. All the arguments will be evaluated before being collected into the scheme list.
+\item ' (aka single quote) \\
+\textbf{Syntax:} \lstinline{'(<elem1> <elem2> ...)} \\
+Also takes in an arbitrary number of elements and construct a list out of the elements, but the arguments are not evaluated.
+\end{itemize}
+
+\textbf{Ways to access list items:}
+\begin{itemize}
+\item car \\
+\textbf{Syntax:} \lstinline{(car <pair>)} \\
+Gets you the first item of a pair
+\item cdr \\
+\textbf{Syntax:} \lstinline{(cdr <pair>)} \\
+Gets you the second item of a pair
+\end{itemize}
+\begin{itemize}
+\item cadr \\
+\textbf{Syntax:} \lstinline{(cadr <pair>)} \\
+Gets you the \lstinline{car} of the \lstinline{cdr}
+\end{itemize}
+\begin{itemize}
+\item cddr \\
+\textbf{Syntax:} \lstinline{(cddr <pair>)} \\
+Gets you the \lstinline{cdr} of the \lstinline{cdr}
+\end{itemize}

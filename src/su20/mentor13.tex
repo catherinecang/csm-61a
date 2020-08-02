@@ -1,0 +1,67 @@
+\documentclass{exam}
+\usepackage{../commonheader}
+\lstset{language=Scheme}
+
+%%% CHANGE THESE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\discnumber{13}
+\title{\textsc{SQL Aggregation and Final Review}}
+\date{August 12, 2019}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\rule{\textwidth}{0.15em}
+\fontsize{12}{15}\selectfont
+
+
+\section{SQL Aggregation}
+\subimport{../../topics/sql/fish/text/}{intro.tex}
+\subimport{../../topics/sql/fish/tables/}{fish.tex}
+
+Hint: The aggregate functions \texttt{MAX}, \texttt{MIN}, \texttt{COUNT}, and \texttt{SUM} return the maximum, minimum, number, and sum of the values in a column. The  \texttt{GROUP BY} clause of a select statement is used to partition rows into groups.
+
+\newpage
+\begin{questions}
+\subimport{../../topics/sql/fish/easy/}{most-populated-species.tex}
+\subimport{../../topics/sql/fish/easy/}{number-fish.tex}
+\subimport{../../topics/sql/fish/easy/}{most-pieces-per-price.tex}
+\end{questions}
+
+%\section{Environment Diagrams}
+%\begin{questions}
+%\subimport{../../topics/lists/mutable/medium/env-diagram/}{env-prog.tex}
+%\end{questions}
+
+\newpage
+\section{Recursive Data Structures}
+\begin{questions}
+\subimport{../../topics/interview/}{rot.tex}
+
+\newpage
+\subimport{../../topics/linked-lists/class/medium/}{shuffle.tex}
+\end{questions}
+
+\newpage
+\section{Recursion}
+\begin{questions}
+\subimport{../../topics/interview/}{game.tex}
+\end{questions}
+
+\newpage
+\section{Scheme}
+\begin{questions}
+\subimport{../../topics/scheme/medium/}{insert.tex}
+\end{questions}
+
+
+\newpage
+\section{Iterators, Generators, and Streams}
+
+\begin{questions}
+\subimport{../../topics/interview/}{all-ways-skeleton.tex}
+\newpage
+\subimport{../../topics/streams/scheme/medium/}{puns.tex}
+\end{questions}
+
+
+\end{document}

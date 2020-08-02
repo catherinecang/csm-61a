@@ -30,8 +30,8 @@ class BallHog(Baller):
 \begin{blocksection}
 
 \begin{lstlisting}
->>> richard = Baller('Richard', True)
->>> albert = BallHog('Albert')
+>>> julie = Baller('Julie', True)
+>>> kenny = BallHog('Kenny')
 >>> len(Baller.all_players)
 \end{lstlisting}
 \begin{solution}[.2in]
@@ -46,7 +46,7 @@ Error
 \end{solution}
 
 \begin{lstlisting}
->>> len(albert.all_players)
+>>> len(kenny.all_players)
 \end{lstlisting}
 \begin{solution}[.2in]
 2
@@ -55,42 +55,42 @@ Error
 
 \begin{blocksection}
 \begin{lstlisting}
->>> richard.pass_ball()
+>>> julie.pass_ball()
 \end{lstlisting}
 \begin{solution}[.2in]
 Error
 \end{solution}
 
 \begin{lstlisting}
->>> richard.pass_ball(albert)
+>>> julie.pass_ball(kenny)
 \end{lstlisting}
 \begin{solution}[.2in]
 True
 \end{solution}
 
 \begin{lstlisting}
->>> richard.pass_ball(albert)
+>>> julie.pass_ball(kenny)
 \end{lstlisting}
 \begin{solution}[.2in]
 False
 \end{solution}
 
 \begin{lstlisting}
->>> BallHog.pass_ball(albert, richard)
+>>> BallHog.pass_ball(kenny, julie)
 \end{lstlisting}
 \begin{solution}[.2in]
 False
 \end{solution}
 
 \begin{lstlisting}
->>> albert.pass_ball(richard)
+>>> kenny.pass_ball(julie)
 \end{lstlisting}
 \begin{solution}[.2in]
 False
 \end{solution}
 
 \begin{lstlisting}
->>> albert.pass_ball(albert, richard)
+>>> kenny.pass_ball(kenny, julie)
 \end{lstlisting}
 \begin{solution}[.2in]
 Error
